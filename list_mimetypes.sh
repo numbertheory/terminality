@@ -10,7 +10,7 @@ function mimes () {
     do
       file_path=$(echo -e "${PWD}/$file" | tr -d '[:space:]')
       mimetype=$(file --mime-type -b $file_path)
-      file_size=$(du -sh $file_path | awk '{print $1;}')
+      file_size=$(du -sh $file_path 2> /dev/null | awk '{print $1;}')
       if (( ${#mimetype} > $longest_mimetype)); then
         longest_mimetype=${#mimetype}
       fi
@@ -25,7 +25,7 @@ function mimes () {
     do
       file_path=$(echo -e "${PWD}/$file" | tr -d '[:space:]')
       mimetype=$(file --mime-type -b $file_path)
-      file_size=$(du -sh $file_path | awk '{print $1;}')
+      file_size=$(du -sh $file_path 2> /dev/null | awk '{print $1;}')
       echo -n $mimetype
       for i in {${#mimetype}..${longest_mimetype}}
         do
