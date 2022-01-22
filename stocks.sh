@@ -22,7 +22,7 @@ GREEN() { echo $2 "${COLOR_GREEN}$1${COLOR_RESET}"}
 
 if [[ "$1" == "" ]]; then
   MAROON "You must supply a stock symbol as an argument:"
-  echo "Example: stocks tsla"
+  echo "Example: source stocks tsla 20"
   return
 fi
 
