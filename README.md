@@ -22,3 +22,13 @@ a demo of actually running the function.
     Requirements: curl, jq installed, along with a token from https://rapidapi.com/apidojo/api/yh-finance/
 
 - [gitignore_gen.sh](gitignore_gen.sh):
+
+   Run `source <PATH_TO_REPO>/gitignore_gen.sh <language>` to generate a `.gitignore` for a new git project.
+
+   To force the script to overwrite your current current `.gitignore` add a `-o` flag.
+
+   `source <PATH_TO_REPO>/gitignore_gen.sh <language> -o`
+
+   This retrieves the latest .gitignore file for the language provided from GitHub:
+
+   https://github.com/github/gitignore
