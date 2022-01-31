@@ -20,3 +20,5 @@ a demo of actually running the function.
     Example: `source stocks.sh siri 20`
 
     Requirements: curl, jq installed, along with a token from https://rapidapi.com/apidojo/api/yh-finance/
+
+- [gitignore_gen.sh](gitignore_gen.sh):
