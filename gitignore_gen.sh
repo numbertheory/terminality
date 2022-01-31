@@ -30,7 +30,7 @@ function gitignore () {
   language=${(C)1}
   echo "Generating gitignore for ${(C)language}"
   if [[ -f ".gitignore" ]] && [[ $2 == "-o" ]]; then
-    echo "Warning: Overwriting existing gitignore file!"
+    echo "Warning: Overwriting existing .gitignore file!"
     writeOutGitIgnore $language
   elif [[ -f ".gitignore" ]]; then
     echo "Not overwriting current .gitignore file"
